@@ -16,5 +16,14 @@ vim /etc/sysconfig/network-scripts/ifcfg-ens33
     DNS1=114.114.114.114
     DNS2=8.8.8.8
 
+#防火墙
+    systemctl status/stop/start/enable/disable firewalld
 
+#包管理工具
+    yum list    #软件列表
+    yum install -y +包名  #下载安装(-y默认直接安装)
+    yum update +包名  #更新
+    yum remove +包名  #卸载
+    yum clean all       #清除全部缓存目录
+    yum makecache   #生成新的缓存
 
